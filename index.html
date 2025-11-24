@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الرخي العالمية - تصميم عصري</title>
+    <!-- ربط ملف الـ CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome (for icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header id="main-header">
+      <div class="container header-content">
+        <div class="logo">
+          <img
+            src="images/Screenshot 2025-11-20 002318.png"
+            alt=""
+            style="width: 60%"
+          />
+        </div>
+        <nav id="main-nav">
+          <a href="#hero-slider">
+            <span class="lang-ar">الرئيسية</span>
+            <span class="lang-en">home</span>
+            <span class="lang-de">Startseite</span>
+          </a>
+          <a href="about.html">
+            <span class="lang-ar">عن الشركة</span>
+            <span class="lang-en">About</span>
+            <span class="lang-de">Über uns</span>
+          </a>
+          <a href="achievements.html">
+            <span class="lang-ar">الانجازات</span>
+            <span class="lang-en">achievements</span>
+            <span class="lang-de">Erfolge</span>
+          </a>
+          <a href="gallery.html">
+            <span class="lang-ar">المعرض</span>
+            <span class="lang-en">Gallery</span>
+            <span class="lang-de">Galerie</span>
+          </a>
+          <a href="certificates.html">
+            <span class="lang-ar">الشهادات</span>
+            <span class="lang-en">Certificates</span>
+            <span class="lang-de">Zertifikate</span>
+          </a>
+          <a href="#services">
+            <span class="lang-ar">خدماتنا</span>
+            <span class="lang-en">services</span>
+            <span class="lang-de">Dienstleistungen</span>
+          </a>
+          <a href="contact-form.html" class="cta-button">
+            <span class="lang-ar">تواصل معنا</span>
+            <span class="lang-en">contact Us</span>
+            <span class="lang-de">Kontakt</span>
+          </a>
+          <div class="language-switcher">
+            <button id="lang-toggle" data-lang="en">English</button>
+          </div>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- 1. البانر الرئيسي / السلايدر (Hero Section) -->
+    <section id="hero-slider" class="hero-slider-container">
+      <!-- شرائح السلايدر وأزرار التنقل ونقاط المؤشر -->
+      <div
+        class="hero-slide active-slide"
+        style="background-image: url('images/img9.jpeg')"
+      >
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="experience-badge">
+            <span class="lang-ar">خبرة أكثر من ٤٠ عامًا</span>
+            <span class="lang-en inline-display">Over 40 Years Experience</span>
+            <span class="lang-de inline-display">Über 40 Jahre Erfahrung</span>
+          </div>
+          <h1>
+            <span class="lang-ar">ريادة في خدمات الحفر</span>
+            <span class="lang-en inline-display">Leaders in Drilling</span>
+            <span class="lang-de inline-display">Führend im Bohren</span>
+          </h1>
+          <p>
+            <span class="lang-ar">حلول متكاملة وموثوقة لإدارة الموارد المائية والطاقة.</span>
+            <span class="lang-en inline-display">Integrated and reliable solutions for water and energy resource management.</span>
+            <span class="lang-de inline-display">Integrierte und zuverlässige Lösungen für das Wasser- und Energieressourcenmanagement.</span>
+          </p>
+          <a href="#services" class="primary-button">
+            <span class="lang-ar">اكتشف خدماتنا</span>
+            <span class="lang-en inline-display">Discover Services</span>
+            <span class="lang-de inline-display">Dienste entdecken</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-slide" style="background-image: url('images/c09b8e66-8fe7-40ac-89f0-b43e0c75b295.jfif')">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="experience-badge">
+            <span class="lang-ar">خبرة أكثر من ٤٠ عامًا</span>
+            <span class="lang-en inline-display">Over 40 Years Experience</span>
+            <span class="lang-de inline-display">Über 40 Jahre Erfahrung</span>
+          </div>
+          <h1>
+            <span class="lang-ar">أحدث التقنيات في المسح الجيولوجي</span>
+            <span class="lang-en inline-display">Latest Technologies in Geological Survey</span>
+            <span class="lang-de inline-display">Neueste Technologien in der geologischen Vermessung</span>
+          </h1>
+          <p>
+            <span class="lang-ar">تخطيط دقيق لضمان نجاح مشروعك من البداية.</span>
+            <span class="lang-en inline-display">Precise planning to ensure your project's success from the start.</span>
+            <span class="lang-de inline-display">Präzise Planung, um den Erfolg Ihres Projekts von Anfang an zu sichern.</span>
+          </p>
+          <a href="#contact-form" class="primary-button">
+            <span class="lang-ar">اطلب استشارة</span>
+            <span class="lang-en inline-display">Get Consultation</span>
+            <span class="lang-de inline-display">Beratung erhalten</span>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="hero-slide"
+        style="background-image: url('images/10c31006-8cda-4369-9369-cb1f09fa1fff.jfif')"
+      >
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="experience-badge">
+            <span class="lang-ar">خبرة أكثر من ٤٠ عامًا</span>
+            <span class="lang-en inline-display">Over 40 Years Experience</span>
+            <span class="lang-de inline-display">Über 40 Jahre Erfahrung</span>
+          </div>
+          <h1>
+            <span class="lang-ar">تنفيذ شبكات الإمداد المائي بكفاءة</span>
+            <span class="lang-en inline-display">Efficient Water Supply Network Execution</span>
+            <span class="lang-de inline-display">Effiziente Ausführung von Wasserversorgungsnetzen</span>
+          </h1>
+          <p>
+            <span class="lang-ar">تصميم وتطبيق حلول مستدامة للمياه والبنية التحتية.</span>
+            <span class="lang-en inline-display">Design and implementation of sustainable water and infrastructure solutions.</span>
+            <span class="lang-de inline-display">Design und Implementierung nachhaltiger Wasser- und Infrastrukturlösungen.</span>
+          </p>
+          <a href="#projects" class="primary-button">
+            <span class="lang-ar">شاهد مشاريعنا</span>
+            <span class="lang-en inline-display">View Our Projects</span>
+            <span class="lang-de inline-display">Unsere Projekte ansehen</span>
+          </a>
+        </div>
+      </div>
+
+      <button class="slider-nav prev" aria-label="Previous">
+        <i class="fas fa-chevron-right box-icon-fix"></i>
+      </button>
+      <button class="slider-nav next" aria-label="Next">
+        <i class="fas fa-chevron-left box-icon-fix"></i>
+      </button>
+
+      <div class="slider-dots"></div>
+    </section>
+
+    <a href="Files/من نحن.docx" class="btn btn-warning btn-full" target="_blank">من نحن</a>
+
+    <section id="services" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="lang-ar">خدماتنا الرئيسية</span>
+          <span class="lang-en inline-display">Our Main Services</span>
+          <span class="lang-de inline-display">Unsere Hauptdienstleistungen</span>
+        </h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <img
+              src="images/10c31006-8cda-4369-9369-cb1f09fa1fff.jfif"
+              alt="Drilling Section"
+              style="height: 260px"
+            />
+            <h3>
+              <span class="lang-ar">قسم الحفر</span>
+              <span class="lang-en inline-display">Drilling Section</span>
+              <span class="lang-de inline-display">Bohrabteilung</span>
+            </h3>
+            <p>
+              <span class="lang-ar">أعمال الحفر العميقة والسطحية لآبار المياه والنفط باستخدام أحدث المعدات.</span>
+              <span class="lang-en inline-display">Deep and shallow drilling for water and oil wells using state-of-the-art equipment.</span>
+              <span class="lang-de inline-display">Tief- und Flachbohrungen für Wasser- und Ölbrunnen mit modernster Ausrüstung.</span>
+            </p>
+          </div>
+          <div class="service-card">
+            <img src="images/img8.jpeg" alt="Water Well Development" />
+            <h3>
+              <span class="lang-ar">تطوير وصيانة الآبار</span>
+              <span class="lang-en inline-display">Well Development & Maintenance</span>
+              <span class="lang-de inline-display">Brunnenentwicklung & Wartung</span>
+            </h3>
+            <p>
+              <span class="lang-ar">صيانة وتطوير وتنظيف آبار المياه لضمان أقصى كفاءة إنتاجية.</span>
+              <span class="lang-en inline-display">Maintenance, development, and cleaning of water wells to ensure maximum production efficiency.</span>
+              <span class="lang-de inline-display">Wartung, Entwicklung und Reinigung von Wasserbrunnen zur Gewährleistung maximaler Produktionseffizienz.</span>
+            </p>
+          </div>
+          <div class="service-card">
+            <img
+              src="images/a22bbc57-dfa4-4dd9-871a-3537275252e9.jfif"
+              alt="Geophysical Studies"
+            />
+            <h3>
+              <span class="lang-ar">دراسات جيوفيزيائية وتخطيط</span>
+              <span class="lang-en inline-display">Geophysical Studies & Planning</span>
+              <span class="lang-de inline-display">Geophysikalische Studien & Planung</span>
+            </h3>
+            <p>
+              <span class="lang-ar">"نقوم بإجراء مسح شامل للمواقع وتحليل البيانات الجيولوجية لتحديد أفضل مواقع الحفر، بالإضافة إلى تنفيذ عمليات الرصد الكهربائي للآبار."</span>
+              <span class="lang-en inline-display">Comprehensive site surveys and geological data analysis to determine the best drilling locations.</span>
+              <span class="lang-de inline-display">Umfassende Standortvermessungen und geologische Datenanalyse zur Bestimmung der besten Bohrstandorte.</span>
+            </p>
+          </div>
+          <div class="service-card">
+            <img src="images/img10.jpeg" alt="Water Supply Systems" />
+            <h3>
+              <span class="lang-ar">تصميم أنظمة الامداد المائي وتصنيع خزانات المياه</span>
+              <span class="lang-en inline-display">Designing Water Supply Systems</span>
+              <span class="lang-de inline-display">Entwurf von Wasserversorgungssystemen</span>
+            </h3>
+            <p>
+              <span class="lang-ar">تصميم وتنفيذ شبكات إمداد المياه المتكاملة والأعمال الخرسانية.</span>
+              <span class="lang-en inline-display">Design and implementation of integrated water supply networks and concrete works.</span>
+              <span class="lang-de inline-display">Design und Implementierung integrierter Wasserversorgungsnetze und Betonarbeiten.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-padding bg-light">
+      <div class="container three-column-layout">
+        <div class="left-photo-box">
+          <img src="images/img7.jpeg" alt="صورة توضيحية" class="left-photo" />
+        </div>
+
+        <div class="about-content">
+          <div class="bio-box lang-ar">
+            <p>
+              <strong>محمود بابكر كيله</strong> المدير العام ورئيس المجلس
+              الإدارة، تخرج في أكتوبر 1978. التحق بشركة الرخي العالمية المحدودة
+              لحفر الآبار في المملكة العربية السعودية عام 1983. وفي عام 1986 أسس
+              فرع شركة الرخي العالمية لحفر الآبار في السودان. ولا يزال يواصل
+              قيادة شركة الرخي العالمية المحدودة بصفته المدير العام ورئيس المجلس
+              الإدارة.
+            </p>
+          </div>
+
+          <div class="bio-box lang-en" dir="ltr">
+            <p>
+              <strong>Mahmoud Babiker Kila</strong>, General Manager and Head of
+              Administrative Council. Graduated in Oct 1978. Joined Alrakhie
+              International Co., ltd for well drilling in Saudi Arabia 1983. In
+              1986, he established Alrakhie Int. drilling co. Sudan Branch. He
+              is still leading Alrakhie Int. Co. ltd As General Manager & Head
+              Administrative Council.
+            </p>
+          </div>
+
+           <div class="bio-box lang-de" dir="ltr">
+            <p>
+              <strong>Mahmoud Babiker Kila</strong>, Geschäftsführer und Leiter des Verwaltungsrates. Abschluss im Okt. 1978. Trat 1983 in Saudi-Arabien der Alrakhie International Co., Ltd. für Brunnenbohrungen bei. 1986 gründete er die Niederlassung der Alrakhie Int. Drilling Co. im Sudan. Er leitet die Alrakhie Int. Co. Ltd. weiterhin als Geschäftsführer und Leiter des Verwaltungsrates.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="right-photo-box">
+          <img src="images/2.jpg" alt="صورة توضيحية" class="right-photo"  style="width: 70%; height: 0%;"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="video-presentation" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="lang-ar">تنفيذ المشاريع على أرض الواقع</span>
+          <span class="lang-en inline-display">Projects In Action</span>
+          <span class="lang-de inline-display">Projekte in Aktion</span>
+        </h2>
+
+        <div class="video-container-box">
+          <iframe
+            width="100%"
+            height="500"
+            src="https://www.youtube.com/embed/2jCo7ZLgkX8"
+            title="Al Raki International Projects In Action"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <div class="video-description">
+          <p>
+            <span class="lang-ar">شاهد لقطات من مشروع "حفر بئر الحميض" في ولاية غرب كردفان، الذي تم تنفيذه لصالح شركة شارف للبترول بواسطة وحدة الحفر 313 الرخي. نطبق الاحترافية في أصعب الظروف.</span>
+            <span class="lang-en inline-display">Watch footage from the "Humeid Well Drilling" project in West Kordofan State, executed for Sharf Oil Company by Al Raki's Drilling Unit 313. We implement professionalism in the toughest conditions.</span>
+            <span class="lang-de inline-display">Sehen Sie Aufnahmen vom Projekt "Humeid Well Drilling" im Bundesstaat West-Kordofan, ausgeführt für die Sharf Oil Company durch die Bohreinheit 313 von Al Raki. Wir setzen Professionalität unter härtesten Bedingungen um.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="recent-news" class="section-padding bg-light">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="lang-ar">آخر الأخبار</span>
+          <span class="lang-en inline-display">Latest news</span>
+          <span class="lang-de inline-display">Aktuelle Nachrichten</span>
+        </h2>
+        <div class="news-grid">
+          <div class="news-card">
+            <div class="news-header">
+              <div class="news-date">
+                <span class="day">11</span>
+                <span class="month item-ar">سبتمبر</span>
+                <span class="month item-en">SEP</span>
+                <span class="month item-de">SEP</span>
+              </div>
+              <div class="news-title-box">
+                <h4>
+                  <span class="lang-ar">منشور صوري مميز</span>
+                  <span class="lang-en inline-display">Featured Image Post</span>
+                  <span class="lang-de inline-display">Hervorgehobener Bildbeitrag</span>
+                </h4>
+              </div>
+            </div>
+            <div class="news-content">
+              <p>
+                <span class="lang-ar">لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسشينغ إليت. نوللا فينيكولا فويجيات بلانديت...</span>
+                <span class="lang-en inline-display">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula feugiat blandit...</span>
+                <span class="lang-de inline-display">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula feugiat blandit...</span>
+              </p>
+              <a href="#" class="read-more-link">
+                <span class="lang-ar">قراءة المزيد</span>
+                <span class="lang-en inline-display">Read More</span>
+                <span class="lang-de inline-display">Mehr lesen</span>
+                <i class="fas fa-arrow-left arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-header">
+              <div class="news-date">
+                <span class="day">25</span>
+                <span class="month item-ar">أغسطس</span>
+                <span class="month item-en">AUG</span>
+                <span class="month item-de">AUG</span>
+              </div>
+              <div class="news-title-box">
+                <h4>
+                  <span class="lang-ar">مشروع جديد في المنطقة الشرقية</span>
+                  <span class="lang-en inline-display">New Project in Eastern Region</span>
+                  <span class="lang-de inline-display">Neues Projekt in der Ostregion</span>
+                </h4>
+              </div>
+            </div>
+            <div class="news-content">
+              <p>
+                <span class="lang-ar">أعلنت الشركة عن الانتهاء بنجاح من حفر سلسلة آبار المياه في المشروع الزراعي.</span>
+                <span class="lang-en inline-display">The company announced the successful completion of drilling water wells for the agricultural project.</span>
+                <span class="lang-de inline-display">Das Unternehmen gab den erfolgreichen Abschluss der Bohrung von Wasserbrunnen für das Landwirtschaftsprojekt bekannt.</span>
+              </p>
+              <a href="#" class="read-more-link">
+                <span class="lang-ar">قراءة المزيد</span>
+                <span class="lang-en inline-display">Read More</span>
+                <span class="lang-de inline-display">Mehr lesen</span>
+                <i class="fas fa-arrow-left arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-header">
+              <div class="news-date">
+                <span class="day">01</span>
+                <span class="month item-ar">يوليو</span>
+                <span class="month item-en">JUL</span>
+                <span class="month item-de">JUL</span>
+              </div>
+              <div class="news-title-box">
+                <h4>
+                  <span class="lang-ar">تحديث أسطول الحفر</span>
+                  <span class="lang-en inline-display">Drilling Fleet Update</span>
+                  <span class="lang-de inline-display">Update der Bohrflotte</span>
+                </h4>
+              </div>
+            </div>
+            <div class="news-content">
+              <p>
+                <span class="lang-ar">نجحنا في تجديد اعتمادات الجودة والسلامة المهنية، مؤكدين التزامنا بالمعايير.</span>
+                <span class="lang-en inline-display">We successfully renewed our quality and safety accreditations, confirming our commitment to standards.</span>
+                <span class="lang-de inline-display">Wir haben unsere Qualitäts- und Sicherheitsakkreditierungen erfolgreich erneuert und damit unser Engagement für Standards bestätigt.</span>
+              </p>
+              <a href="#" class="read-more-link">
+                <span class="lang-ar">قراءة المزيد</span>
+                <span class="lang-en inline-display">Read More</span>
+                <span class="lang-de inline-display">Mehr lesen</span>
+                <i class="fas fa-arrow-left arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="lang-ar">شركاء النجاح</span>
+          <span class="lang-en inline-display">Our Clients</span>
+          <span class="lang-de inline-display">Unsere Kunden</span>
+        </h2>
+        <div class="clients-grid">
+          <img src="images/شريك1.jpeg" alt="Client 1 Logo" class="client-logo" />
+          <img src="images/شريك2.jpeg" alt="Client 2 Logo" class="client-logo" />
+          <img src="images/شريك3.jpeg" alt="Client 3 Logo" class="client-logo" />
+          <img src="images/شريك4.jpeg" alt="Client 4 Logo" class="client-logo" />
+          <img src="images/شريك5.jpeg" alt="Client 5 Logo" class="client-logo" />
+          <img src="images/شريك6.jpeg" alt="Client 6 Logo" class="client-logo" />
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact-footer">
+      <div class="container footer-grid">
+        <div class="footer-col footer-contact">
+          <h4>
+            <span class="lang-ar">معلومات الاتصال</span>
+            <span class="lang-en inline-display">Contact Info</span>
+            <span class="lang-de inline-display">Kontaktinfo</span>
+          </h4>
+
+          <div class="contact-block">
+            <strong>
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="lang-ar">المقر الرئيسي:</span>
+              <span class="lang-en inline-display">Headquarters:</span>
+              <span class="lang-de inline-display">Hauptsitz:</span>
+            </strong>
+            <p>
+              <span class="lang-ar">الخرطوم - سوبا</span>
+              <span class="lang-en inline-display">Khartoum - Soba</span>
+              <span class="lang-de inline-display">Khartum - Soba</span>
+            </p>
+            <p>
+              <a href="#contact-form" class="view-details-link">
+                <span class="lang-ar">عرض التفاصيل الكاملة</span>
+                <span class="lang-en inline-display">View Full Details</span>
+                <span class="lang-de inline-display">Alle Details anzeigen</span>
+              </a>
+            </p>
+          </div>
+
+          <div class="contact-block">
+            <strong>
+              <i class="fab fa-whatsapp"></i>
+              <span class="lang-ar">واتساب (مصر):</span>
+              <span class="lang-en inline-display">WhatsApp (Egypt):</span>
+              <span class="lang-de inline-display">WhatsApp (Ägypten):</span>
+            </strong>
+            <p>
+              <a href="https://wa.me/201123494527" dir="ltr">+20 112 349 4527</a>
+            </p>
+          </div>
+
+          <div class="contact-block">
+            <strong>
+              <i class="fas fa-envelope"></i>
+              <span class="lang-ar">البريد الإلكتروني:</span>
+              <span class="lang-en inline-display">Email:</span>
+              <span class="lang-de inline-display">E-Mail:</span>
+            </strong>
+            <p>
+              <a href="mailto:rakhinter@alrakhie.net">rakhinter@alrakhie.net</a>
+            </p>
+            <p><a href="mailto:rakhinter@yahoo.com">rakhinter@yahoo.com</a></p>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links">
+          <h4>
+            <span class="lang-ar">روابط سريعة</span>
+            <span class="lang-en inline-display">Quick Links</span>
+            <span class="lang-de inline-display">Schnelllinks</span>
+          </h4>
+          <ul>
+            <li>
+              <a href="#about">
+                <span class="lang-ar">عن الشركة</span>
+                <span class="lang-en inline-display">About Us</span>
+                <span class="lang-de inline-display">Über uns</span>
+              </a>
+            </li>
+            <li>
+              <a href="#services">
+                <span class="lang-ar">خدماتنا</span>
+                <span class="lang-en inline-display">Services</span>
+                <span class="lang-de inline-display">Dienstleistungen</span>
+              </a>
+            </li>
+            <li>
+              <a href="#projects">
+                <span class="lang-ar">المشاريع</span>
+                <span class="lang-en inline-display">Projects</span>
+                <span class="lang-de inline-display">Projekte</span>
+              </a>
+            </li>
+            <li>
+              <a href="#recent-news">
+                <span class="lang-ar">الأخبار</span>
+                <span class="lang-en inline-display">News</span>
+                <span class="lang-de inline-display">Nachrichten</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-social">
+          <h4>
+            <span class="lang-ar">تابعنا وتواصل معنا</span>
+            <span class="lang-en inline-display">Follow & Connect</span>
+            <span class="lang-de inline-display">Folgen & Verbinden</span>
+          </h4>
+          <p>
+            <span class="lang-ar">تابع جديدنا وعروضنا الخاصة على صفحاتنا الاجتماعية.</span>
+            <span class="lang-en inline-display">Stay updated with our latest offers and projects on social media.</span>
+            <span class="lang-de inline-display">Bleiben Sie über unsere neuesten Angebote und Projekte auf den sozialen Medien auf dem Laufenden.</span>
+          </p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/1CDMniWRSy/" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/alrakhie.international?igsh=ZGs0N3E0b2NvMWpw" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>
+            <span class="lang-ar">&copy; 2025 جميع الحقوق محفوظة لشركة الرخي العالمية المحدودة.</span>
+            <span class="lang-en inline-display">&copy; 2025 All Rights Reserved to Al Raki International Ltd.</span>
+            <span class="lang-de inline-display">&copy; 2025 Alle Rechte vorbehalten für Al Raki International Ltd.</span>
+          </p>
+          <p class="design-credit">
+            <span class="lang-ar">
+              تصميم وبرمجة بواسطة
+              <a href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL" target="_blank">
+                <strong class="credit-link">GMTWEB</strong>
+              </a>
+            </span>
+            <span class="lang-en inline-display">
+              Design and programming by
+              <a href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL" target="_blank">
+                <strong class="credit-link">GMTWEB</strong>
+              </a>
+            </span>
+            <span class="lang-de inline-display">
+              Design und Programmierung von
+              <a href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL" target="_blank">
+                <strong class="credit-link">GMTWEB</strong>
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div id="quick-contact-mobile">
+      <a href="tel:+249918201681" class="quick-btn phone-btn" aria-label="اتصل الآن: 00249918201681">
+        <i class="fas fa-phone-alt"></i>
+      </a>
+
+      <a href="https://wa.me/201123494527" target="_blank" class="quick-btn whatsapp-btn" aria-label="واتساب">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الرخي العالمية - الإنجازات والقدرات</title>
+    <!-- ربط ملف الـ CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome (for icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- تنسيقات خاصة بالصفحة (لتصحيح ارتفاع المحتوى أسفل الهيدر) -->
+    <style>
+      #achievements-page-content {
+        padding-top: 100px;
+      }
+
+      /* تنسيق خاص لإضافة مسافة بين النقاط */
+      .accordion-content-inner ul {
+        list-style: disc; /* للتأكد من وجود نقاط */
+      }
+      .accordion-content-inner li {
+        margin-bottom: 8px; /* مسافة بين نقاط القائمة */
+      }
+      
+      /* إضافة تنسيق للقوائم في اللغة الألمانية والإنجليزية لضمان ظهور النقاط بشكل صحيح */
+      body.en .accordion-content-inner ul,
+      body.de .accordion-content-inner ul {
+          padding-left: 20px;
+          padding-right: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- الهيدر وشريط التنقل -->
+    <header id="main-header">
+      <div class="container header-content">
+        <div class="logo">
+          <img
+            src="images/Screenshot 2025-11-20 002318.png"
+            alt=""
+            style="width: 60%"
+          />
+        </div>
+        <nav id="main-nav">
+          <a href="#hero-slider">
+            <span class="lang-ar">الرئيسية</span>
+            <span class="lang-en">home</span>
+            <span class="lang-de">Startseite</span>
+          </a>
+          <a href="about.html">
+            <span class="lang-ar">عن الشركة</span>
+            <span class="lang-en">About</span>
+            <span class="lang-de">Über uns</span>
+          </a>
+          <a href="achievements.html">
+            <span class="lang-ar">الانجازات</span>
+            <span class="lang-en">achievements</span>
+            <span class="lang-de">Erfolge</span>
+          </a>
+          <a href="gallery.html">
+            <span class="lang-ar">المعرض</span>
+            <span class="lang-en">Gallery</span>
+            <span class="lang-de">Galerie</span>
+          </a>
+          <a href="certificates.html">
+            <span class="lang-ar">الشهادات</span>
+            <span class="lang-en">Certificates</span>
+            <span class="lang-de">Zertifikate</span>
+          </a>
+          <a href="#services">
+            <span class="lang-ar">خدماتنا</span>
+            <span class="lang-en">services</span>
+            <span class="lang-de">Dienstleistungen</span>
+          </a>
+          <a href="contact-form.html" class="cta-button">
+            <span class="lang-ar">تواصل معنا</span>
+            <span class="lang-en">contact Us</span>
+            <span class="lang-de">Kontakt</span>
+          </a>
+          <div class="language-switcher">
+            <button id="lang-toggle" data-lang="en">English</button>
+          </div>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- محتوى صفحة الإنجازات الجديد -->
+    <section id="achievements-page-content" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="lang-ar">إنجازاتنا وقدراتنا الفنية</span>
+          <span class="lang-en inline-display">Our Key Achievements & Technical Capabilities</span>
+          <span class="lang-de inline-display">Unsere wichtigsten Erfolge & technische Fähigkeiten</span>
+        </h2>
+
+        <div class="achievements-accordion">
+          <!-- 1. حفر الآبار - Water Well Drilling -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="lang-ar">1. حفر آبار المياه والمشاريع الرئيسية</span>
+              <span class="lang-en inline-display">1. Water Well Drilling & Major Projects</span>
+              <span class="lang-de inline-display">1. Brunnenbohrungen & Großprojekte</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <div class="lang-ar">
+                  <p>
+                    بدأت شركة الرخي العالمية أعمالها في عام 1986 بوحدتي حفر فقط،
+                    واليوم تمتلك أكثر من (13) وحدة حفر من أفضل الآليات الأمريكية
+                    من نوع Gardner Denver، مما مكنها من تنفيذ أكثر من (1000) بئر
+                    شملت جميع حقول البترول والقرى المجاورة وعلى امتداد خطوط
+                    أنابيب النفط.
+                  </p>
+                  <p><strong>أبرز الإنجازات:</strong></p>
+                  <ul>
+                    <li>
+                      حفر أعمق بئر مياه في السودان بعمق (630 متر / 2066 قدم)
+                      لصالح شركة 2B للبترول (GNPOC سابقاً) في حقل نيم.
+                    </li>
+                    <li>
+                      حفر أكثر من (400) بئر مياه لصالح شركة GNPOC (لاحقاً 2B
+                      OPCO) خلال الفترة من 1999 وحتى الآن.
+                    </li>
+                    <li>
+                      حفر أكثر من (300) بئر لصالح شركة بترو إنرجي الصينية (CNPC)
+                      خلال الفترة من 2005 وحتى 2025 في حقول بليلة وحديدة.
+                    </li>
+                    <li>
+                      تنفيذ (15) بئرًا لصالح المنظمة اليابانية للتعاون الدولي -
+                      جايكا (Jica) بولاية كسلا في وقت قياسي.
+                    </li>
+                    <li>
+                      حفر (11) بئرًا لصالح شركة نادك للتنمية الزراعية (السعودية)
+                      بشمال كردفان.
+                    </li>
+                    <li>
+                      المساهمة في مشاريع التنمية الكبرى (مثل طريق شريان الشمال –
+                      8 آبار) ومشاريع البنوك (البنك الزراعي) والإسكان.
+                    </li>
+                  </ul>
+                  <p>
+                    تستخدم الشركة جميع طرق الحفر (الدوار، الهواء والرغوة "همر"،
+                    والمطرقة الدقاقة) مع خبرة طويلة في أعمال العزل الإسمنتي لعزل
+                    الطبقات المالحة أو الملوثة.
+                  </p>
+                </div>
+                <div class="lang-en" dir="ltr">
+                  <p>
+                    Al-Rakhie International began its operations in 1986 with
+                    only two drilling units. Today, the company owns more than
+                    13 top-tier American drilling rigs of the Gardner Denver
+                    brand, enabling the execution of one of Sudan's largest
+                    water-well drilling programs, with over 1,000 wells drilled
+                    across all oil fields, adjacent villages, and along oil
+                    pipeline routes.
+                  </p>
+                  <p><strong>Major Achievements:</strong></p>
+                  <ul>
+                    <li>
+                      Drilled the deepest water well in Sudan at a depth of 630
+                      m (2066 ft) for 2B Petroleum (formerly GNPOC) at Neem oil
+                      field.
+                    </li>
+                    <li>
+                      Drilled over 400 water wells for GNPOC (later 2B OPCO)
+                      from 1999 to the present.
+                    </li>
+                    <li>
+                      Drilled over 300 wells for Petro Energy (CNPC) between
+                      2005 and 2025 in Baleela and Hadeeda fields.
+                    </li>
+                    <li>
+                      Completed 15 wells for JICA (Japan International
+                      Cooperation Agency) in Kassala State in a very short
+                      period.
+                    </li>
+                    <li>
+                      Completed 11 wells for NADEC Agricultural Development
+                      (Saudi Arabia) in North Kordofan.
+                    </li>
+                    <li>
+                      Contributed to major development projects (e.g., North
+                      Corridor Road – 8 wells) and banking (Agricultural Bank)
+                      and housing projects.
+                    </li>
+                  </ul>
+                  <p>
+                    The company utilizes all drilling methods (rotary, air and
+                    foam "hammer," and DTH) and has extensive experience in
+                    cement grouting to isolate saline or contaminated aquifers.
+                  </p>
+                </div>
+                <div class="lang-de" dir="ltr">
+                  <p>
+                    Al-Rakhie International begann seine Tätigkeit im Jahr 1986 mit nur zwei Bohreinheiten. Heute besitzt das Unternehmen mehr als 13 erstklassige amerikanische Bohranlagen der Marke Gardner Denver, was die Durchführung eines der größten Brunnenbohrprogramme im Sudan ermöglichte, mit über 1.000 gebohrten Brunnen in allen Ölfeldern, angrenzenden Dörfern und entlang der Ölpipelines.
+                  </p>
+                  <p><strong>Wichtige Erfolge:</strong></p>
+                  <ul>
+                    <li>
+                      Bohrung des tiefsten Wasserbrunnens im Sudan mit einer Tiefe von 630 m (2066 ft) für 2B Petroleum (ehemals GNPOC) im Ölfeld Neem.
+                    </li>
+                    <li>
+                      Bohrung von über 400 Wasserbrunnen für GNPOC (später 2B OPCO) von 1999 bis heute.
+                    </li>
+                    <li>
+                      Bohrung von über 300 Brunnen für Petro Energy (CNPC) zwischen 2005 und 2025 in den Feldern Baleela und Hadeeda.
+                    </li>
+                    <li>
+                      Fertigstellung von 15 Brunnen für JICA (Japan International Cooperation Agency) im Bundesstaat Kassala in sehr kurzer Zeit.
+                    </li>
+                    <li>
+                      Fertigstellung von 11 Brunnen für NADEC Agricultural Development (Saudi-Arabien) in Nord-Kordofan.
+                    </li>
+                    <li>
+                      Beitrag zu großen Entwicklungsprojekten (z.B. North Corridor Road – 8 Brunnen) sowie Banken- (Landwirtschaftsbank) und Wohnungsbauprojekten.
+                    </li>
+                  </ul>
+                  <p>
+                    Das Unternehmen nutzt alle Bohrmethoden (Rotary, Luft und Schaum "Hammer" und DTH) und verfügt über umfangreiche Erfahrung in der Zementinjektion zur Isolierung salzhaltiger oder kontaminierter Grundwasserleiter.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. الدراسات الجيوفيزيائية - Geophysical Studies -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="lang-ar">2. الدراسات والمسح الجيوفيزيائي</span>
+              <span class="lang-en inline-display">2. Geo-physical Studies and Survey</span>
+              <span class="lang-de inline-display">2. Geophysikalische Studien & Vermessung</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <div class="lang-ar">
+                  <p>
+                    قامت الشركة بعمل دراسات جيو فيزيائية في العديد من المواقع،
+                    بما في ذلك:
+                  </p>
+                  <ul>
+                    <li>
+                      مناطق واسعة في جبال النوبة، وولاية شمال، وجنوب، وغرب
+                      كردفان.
+                    </li>
+                    <li>
+                      حقل بليلة للبترول لشركة بترو إنرجي الصينية، وحقل
+                      نيم لشركة جنبوك للبترول.
+                    </li>
+                    <li>
+                      مناطق في شمال دارفور (مثل بلوك 12 لصحاري للبترول) و
+                      شرق السودان (كسلا، سنكات، جبيت، دردريب).
+                    </li>
+                  </ul>
+                </div>
+                <div class="lang-en" dir="ltr">
+                  <p>
+                    The company has conducted geophysical surveys in several
+                    locations, including:
+                  </p>
+                  <ul>
+                    <li>
+                      Extensive areas in the Nuba Mountains, and North,
+                      South, and West Kordofan states.
+                    </li>
+                    <li>
+                      Baleela Oil Field for Petro Energy (CNPC) and Neem
+                      Oil Field for GNPOC.
+                    </li>
+                    <li>
+                      Areas in North Darfur (e.g., Block 12 for Sahara
+                      Petroleum) and Eastern Sudan (Kassala, Sinkat, Jebeit,
+                      Dardareeb).
+                    </li>
+                  </ul>
+                </div>
+                 <div class="lang-de" dir="ltr">
+                  <p>
+                    Das Unternehmen hat geophysikalische Untersuchungen an mehreren Standorten durchgeführt, darunter:
+                  </p>
+                  <ul>
+                    <li>
+                      Weite Gebiete in den Nuba-Bergen sowie in den Bundesstaaten Nord-, Süd- und West-Kordofan.
+                    </li>
+                    <li>
+                      Baleela-Ölfeld für Petro Energy (CNPC) und Neem-Ölfeld für GNPOC.
+                    </li>
+                    <li>
+                      Gebiete in Nord-Darfur (z.B. Block 12 für Sahara Petroleum) und Ost-Sudan (Kassala, Sinkat, Jebeit, Dardareeb).
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. الرصد الكهربائي - Electrical Logging -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="lang-ar">3. الرصد والتسجيل الكهربائي للآبار (Electrical Logging)</span>
+              <span class="lang-en inline-display">3. Electrical Logging for Wells</span>
+              <span class="lang-de inline-display">3. Elektrische Bohrlochmessung</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <div class="lang-ar">
+                  <p>
+                    تمتلك الشركة جهاز رصد كهربائي متكامل من RG Robertson
+                    Geologging، وقامت بعمل رصد كهربائي لتحديد المياه المالحة،
+                    الخزانات الحاملة للمياه، والكمية في المواقع التالية:
+                  </p>
+                  <ul>
+                    <li>
+                      الجزيرة (منطقة المناقل)، غرب دارفور، الخرطوم (بئر الشرطة)،
+                      ولاية نهر النيل.
+                    </li>
+                    <li>مصنع البرفدار للثلج (لأعمال عزل المياه الملوثة).</li>
+                    <li>
+                      حقول البترول: بليلة، حديدة، هجليج، ونيم، بالإضافة إلى
+                      مشروع نادك السعودي.
+                    </li>
+                  </ul>
+                </div>
+                <div class="lang-en" dir="ltr">
+                  <p>
+                    The company owns a complete Electric Logging Unit from **RG
+                    Robertson Geologging** and has performed electrical logging
+                    to determine aquifer quality, depth, salinity, and water
+                    quantities in:
+                  </p>
+                  <ul>
+                    <li>
+                      Al-Managil (Gezira State), West Darfur, Khartoum (Police
+                      Well), and River Nile State.
+                    </li>
+                    <li>
+                      Berfdar Ice Factory (for contaminated water isolation
+                      works).
+                    </li>
+                    <li>
+                      Oil Fields: Baleela, Hadeeda, Heglig, and Neem, in
+                      addition to the NADEC Agricultural Project.
+                    </li>
+                  </ul>
+                </div>
+                <div class="lang-de" dir="ltr">
+                  <p>
+                    Das Unternehmen besitzt eine komplette elektrische Protokolliereinheit von **RG Robertson Geologging** und hat elektrische Messungen durchgeführt, um die Qualität, Tiefe, den Salzgehalt und die Wassermengen der Grundwasserleiter zu bestimmen in:
+                  </p>
+                  <ul>
+                    <li>
+                      Al-Managil (Bundesstaat Gezira), West-Darfur, Khartum (Polizei-Brunnen) und Bundesstaat Flussnil.
+                    </li>
+                    <li>
+                      Berfdar Eisfabrik (für Arbeiten zur Isolierung von kontaminiertem Wasser).
+                    </li>
+                    <li>
+                      Ölfelder: Baleela, Hadeeda, Heglig und Neem sowie das NADEC-Landwirtschaftsprojekt.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. حفر الأساسات الخرسانية - Wedge Drilling & Concrete Works -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span class="lang-ar">4. حفر الأساسات (الأسفينات) وأعمال الخرسانة المحدودة</span>
+              <span class="lang-en inline-display">4. Wedge Drilling & Limited Concrete Works</span>
+              <span class="lang-de inline-display">4. Keilbohrungen & begrenzte Betonarbeiten</span>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <div class="lang-ar">
+                  <p>
+                    تمتلك الشركة أحدث آلات حفر الأسفينات (أكثر من ثلاثة حفارات)
+                    يمكنها الحفر لعمق 30 متر بقطر 100 سم، مع طقم مهندسين مختصين
+                    لضمان استقامة عالية للأسفين. وتشمل الإنجازات:
+                  </p>
+                  <ul>
+                    <li>استاد ربك الرياضي.</li>
+                    <li>مشروع كهرباء الدمازين.</li>
+                    <li>
+                      عشرات الفلل والعمارات ومباني المصانع بولاية الخرطوم.
+                    </li>
+                  </ul>
+                </div>
+                <div class="lang-en" dir="ltr">
+                  <p>
+                    The company owns modern wedge-drilling rigs (more than
+                    three) capable of reaching 30 meters depth with a 100 cm
+                    diameter, operated by a specialized engineering team
+                    ensuring high straightness. Major projects include:
+                  </p>
+                  <ul>
+                    <li>Rabak Sports Stadium.</li>
+                    <li>Damazine Power Project.</li>
+                    <li>
+                      Dozens of villas, residential buildings, and industrial
+                      facilities in Khartoum State.
+                    </li>
+                  </ul>
+                </div>
+                <div class="lang-de" dir="ltr">
+                  <p>
+                    Das Unternehmen besitzt moderne Keilbohranlagen (mehr als drei), die eine Tiefe von 30 Metern mit einem Durchmesser von 100 cm erreichen können, bedient von einem spezialisierten Ingenieurteam, das eine hohe Geradlinigkeit gewährleistet. Zu den wichtigsten Projekten gehören:
+                  </p>
+                  <ul>
+                    <li>Rabak Sportstadion.</li>
+                    <li>Damazine Stromprojekt.</li>
+                    <li>
+                      Dutzende von Villen, Wohngebäuden und Industrieanlagen im Bundesstaat Khartum.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. قسم عملائنا (Our Clients) -->
+    <section id="clients" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="lang-ar">شركاء النجاح</span>
+          <span class="lang-en inline-display">Our Clients</span>
+          <span class="lang-de inline-display">Unsere Kunden</span>
+        </h2>
+        <div class="clients-grid">
+          <img
+            src="images/شريك1.jpeg"
+            alt="Client 1 Logo"
+            class="client-logo"
+          />
+          <img
+            src="images/شريك2.jpeg"
+            alt="Client 2 Logo"
+            class="client-logo"
+          />
+          <img
+            src="images/شريك3.jpeg"
+            alt="Client 3 Logo"
+            class="client-logo"
+          />
+          <img
+            src="images/شريك4.jpeg"
+            alt="Client 4 Logo"
+            class="client-logo"
+          />
+          <img
+            src="images/شريك5.jpeg"
+            alt="Client 5 Logo"
+            class="client-logo"
+          />
+          <img
+            src="images/شريك6.jpeg"
+            alt="Client 6 Logo"
+            class="client-logo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- الفوتر (Footer) -->
+    <footer id="contact-footer">
+      <div class="container footer-grid">
+        <div class="footer-col footer-contact">
+          <h4>
+            <span class="lang-ar">معلومات الاتصال</span>
+            <span class="lang-en inline-display">Contact Info</span>
+            <span class="lang-de inline-display">Kontaktinfo</span>
+          </h4>
+          <div class="contact-block">
+            <strong>
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="lang-ar">المقر الرئيسي:</span>
+              <span class="lang-en inline-display">Headquarters:</span>
+              <span class="lang-de inline-display">Hauptsitz:</span>
+            </strong>
+            <p>
+              <span class="lang-ar">الخرطوم - سوبا</span>
+              <span class="lang-en inline-display">Khartoum - Soba</span>
+              <span class="lang-de inline-display">Khartum - Soba</span>
+            </p>
+            <p>
+              <a href="index.html#contact-form" class="view-details-link">
+                <span class="lang-ar">عرض التفاصيل الكاملة</span>
+                <span class="lang-en inline-display">View Full Details</span>
+                <span class="lang-de inline-display">Alle Details anzeigen</span>
+              </a>
+            </p>
+          </div>
+
+          <div class="contact-block">
+            <strong>
+              <i class="fab fa-whatsapp"></i>
+              <span class="lang-ar">واتساب (مصر):</span>
+              <span class="lang-en inline-display">WhatsApp (Egypt):</span>
+              <span class="lang-de inline-display">WhatsApp (Ägypten):</span>
+            </strong>
+            <p>
+              <a href="https://wa.me/201123494527" dir="ltr"
+                >+20 112 349 4527</a
+              >
+            </p>
+          </div>
+
+          <div class="contact-block">
+            <strong>
+              <i class="fas fa-envelope"></i>
+              <span class="lang-ar">البريد الإلكتروني:</span>
+              <span class="lang-en inline-display">Email:</span>
+              <span class="lang-de inline-display">E-Mail:</span>
+            </strong>
+            <p>
+              <a href="mailto:rakhinter@alrakhie.net">rakhinter@alrakhie.net</a>
+            </p>
+            <p><a href="mailto:rakhinter@yahoo.com">rakhinter@yahoo.com</a></p>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links">
+          <h4>
+            <span class="lang-ar">روابط سريعة</span>
+            <span class="lang-en inline-display">Quick Links</span>
+            <span class="lang-de inline-display">Schnelllinks</span>
+          </h4>
+          <ul>
+            <li>
+              <a href="index.html#about">
+                <span class="lang-ar">عن الشركة</span>
+                <span class="lang-en inline-display">About Us</span>
+                <span class="lang-de inline-display">Über uns</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <span class="lang-ar">خدماتنا</span>
+                <span class="lang-en inline-display">Services</span>
+                <span class="lang-de inline-display">Dienstleistungen</span>
+              </a>
+            </li>
+            <li>
+              <a href="certificates.html">
+                <span class="lang-ar">الشهادات</span>
+                <span class="lang-en inline-display">Certificates</span>
+                <span class="lang-de inline-display">Zertifikate</span>
+              </a>
+            </li>
+            <li>
+              <a href="gallery.html">
+                <span class="lang-ar">المعرض</span>
+                <span class="lang-en inline-display">Gallery</span>
+                <span class="lang-de inline-display">Galerie</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#recent-news">
+                <span class="lang-ar">الأخبار</span>
+                <span class="lang-en inline-display">News</span>
+                <span class="lang-de inline-display">Nachrichten</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-social">
+          <h4>
+            <span class="lang-ar">تابعنا وتواصل معنا</span>
+            <span class="lang-en inline-display">Follow & Connect</span>
+            <span class="lang-de inline-display">Folgen & Verbinden</span>
+          </h4>
+          <p>
+            <span class="lang-ar">تابع جديدنا وعروضنا الخاصة على صفحاتنا الاجتماعية.</span>
+            <span class="lang-en inline-display">Stay updated with our latest offers and projects on social media.</span>
+            <span class="lang-de inline-display">Bleiben Sie über unsere neuesten Angebote und Projekte auf den sozialen Medien auf dem Laufenden.</span>
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/share/1CDMniWRSy/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/alrakhie.international?igsh=ZGs0N3E0b2NvMWpw"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>
+            <span class="lang-ar">&copy; 2025 جميع الحقوق محفوظة لشركة الرخي العالمية المحدودة.</span>
+            <span class="lang-en inline-display">&copy; 2025 All Rights Reserved to Al Raki International Ltd.</span>
+            <span class="lang-de inline-display">&copy; 2025 Alle Rechte vorbehalten für Al Raki International Ltd.</span>
+          </p>
+          <p class="design-credit">
+            <span class="lang-ar">
+              تصميم وبرمجة بواسطة
+              <a
+                href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL"
+                target="_blank"
+              >
+                <strong class="credit-link">GMTWEB</strong>
+              </a>
+            </span>
+            <span class="lang-en inline-display">
+              Design and programming by
+              <a
+                href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL"
+                target="_blank"
+              >
+                <strong class="credit-link">GMTWEB</strong>
+              </a>
+            </span>
+             <span class="lang-de inline-display">
+              Design und Programmierung von
+              <a
+                href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL"
+                target="_blank"
+              >
+                <strong class="credit-link">GMTWEB</strong>
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div id="quick-contact-mobile">
+      <a
+        href="tel:+249918201681"
+        class="quick-btn phone-btn"
+        aria-label="اتصل الآن: 00249918201681"
+      >
+        <i class="fas fa-phone-alt"></i>
+      </a>
+
+      <a
+        href="https://wa.me/201123494527"
+        target="_blank"
+        class="quick-btn whatsapp-btn"
+        aria-label="واتساب"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
