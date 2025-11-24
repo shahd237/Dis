@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al-Rakhie International - Company Profile</title>
+    <title>Al-Rakhie International - Company Profile (Responsive)</title>
     <style>
+        /* Base Styles */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0; /* Remove default margin */
+            padding: 20px;
             background-color: #f4f4f4;
+            box-sizing: border-box; /* Ensure padding/border is inside width */
         }
         .container {
             max-width: 900px;
@@ -17,50 +20,108 @@
             background: #fff;
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
         .language-switcher {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .language-switcher button {
             padding: 10px 15px;
-            margin: 0 5px;
+            margin: 5px; /* Added margin for better spacing on small screens */
             cursor: pointer;
             background-color: #007bff;
             color: white;
             border: none;
             border-radius: 5px;
             transition: background-color 0.3s;
+            font-weight: bold;
         }
         .language-switcher button:hover {
             background-color: #0056b3;
         }
         .content-section {
-            display: none; /* Hide all content sections by default */
+            display: none;
         }
         .content-section.active {
-            display: block; /* Show the active section */
+            display: block;
         }
         h1, h2, h3 {
-            color: #333;
+            color: #1e3c72; /* Darker header color */
         }
+
+        /* Manager Info - Flexible Layout */
         .manager-info {
             display: flex;
-            align-items: center;
-            margin-top: 20px;
+            align-items: flex-start; /* Align text to the top */
+            gap: 20px; /* Space between image and text */
+            margin-top: 25px;
             border-top: 1px solid #ccc;
-            padding-top: 20px;
+            padding-top: 25px;
         }
         .manager-info img {
             max-width: 150px;
             height: auto;
-            margin-right: 20px;
+            flex-shrink: 0; /* Prevent image from shrinking */
             border-radius: 5px;
+            object-fit: cover; /* Ensures image covers its area nicely */
         }
+        .manager-text {
+            flex-grow: 1; /* Allows text to take up remaining space */
+        }
+
+        /* Arabic Specific Styling */
         .text-arabic {
-            direction: rtl; /* Right-to-left for Arabic text */
+            direction: rtl;
             text-align: right;
+        }
+        /* Ensure flex layout is reversed in Arabic for logical flow */
+        .text-arabic .manager-info {
+            flex-direction: row-reverse;
+        }
+
+        /* --- RESPONSIVENESS (Media Queries) --- */
+
+        /* For screens smaller than 600px (e.g., Mobile Phones) */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px 15px; /* Reduce padding on container */
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            /* Stack Manager Info vertically */
+            .manager-info, .text-arabic .manager-info {
+                flex-direction: column; /* Stack image and text */
+                align-items: center; /* Center items when stacked */
+                text-align: center; /* Center text titles */
+            }
+            
+            .manager-info img {
+                max-width: 100%; /* Allow image to take full width of container */
+                margin-bottom: 15px;
+            }
+
+            /* Adjust Arabic text alignment within the stacked section */
+            .text-arabic .manager-text {
+                text-align: right; /* Keep body text right-aligned in Arabic */
+                padding-top: 10px;
+            }
+        }
+
+        /* For screens between 601px and 900px (e.g., Tablets) */
+        @media (min-width: 601px) and (max-width: 900px) {
+            .container {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
     </style>
 </head>
@@ -74,13 +135,12 @@
         </div>
 
         <div id="content-ar" class="content-section text-arabic active">
-            <h1>من نحن</h1>
-            <img src="images/c09b8e66-8fe7-40ac-89f0-b43e0c75b295.jfif" alt="">
+            <h1>من نحن - شركة الرخي العالمية لحفر الآبار</h1>
             <p>
-                تُعد شركة الرخي العالمية لحفر الآبار الجوفية، شركة سعودية سودانية رائدة في مجال حفر الآبار الجوفية، تأسست في المملكة العربية السعودية عام 1970 وفي السودان عام 1986. بخبرة تتجاوز أكثر من 40 عامًا في السودان.
+                تُعد شركة *الرخي العالمية لحفر الآبار الجوفية، شركة سعودية سودانية رائدة في مجال حفر الآبار الجوفية، تأسست في المملكة العربية السعودية عام **1970* وفي السودان عام *1986. بخبرة تتجاوز أكثر من **40 عامًا* في السودان.
             </p>
             <p>
-                تمتلك الشركة أسطولاً متطوراً من معدات الحفر الأمريكية من نوع Gardner Denver، وتعتمد على فريق من المهندسين والفنيين ذوي الخبرة العالية. مما مكنها من حفر أكثر من ألف بئر في مختلف أنحاء السودان بكفاءة وجودة متميزة.
+                تمتلك الشركة أسطولاً متطوراً من معدات الحفر الأمريكية من نوع *Gardner Denver، وتعتمد على فريق من المهندسين والفنيين ذوي الخبرة العالية. مما مكنها من حفر أكثر من **ألف بئر* في مختلف أنحاء السودان بكفاءة وجودة متميزة.
             </p>
             <p>
                 وتواصل الشركة تعزيز ريادتها وتطوير تقنياتها لتقديم أفضل حلول حفر الآبار في المنطقة.
@@ -90,14 +150,14 @@
 
             <h2>عن المدير العام</h2>
             <div class="manager-info">
-                <img src="images/img7.jpeg" alt="صورة المدير العام محمود بابكر كيتا">
-                <div>
+                <img src="path/to/mahmoud_babiker_kaita_image.jpg" alt="صورة المدير العام محمود بابكر كيتا">
+                <div class="manager-text">
                     <h3>محمود بابكر كيتا</h3>
                     <p>
-                        تخرج المدير العام ورئيس مجلس الإدارة في أكتوبر 1978، والتحق بشركة الرخي العالمية المحدودة لحفر الآبار في المملكة العربية السعودية عام 1983، حيث بدأ مسيرته المهنية في مجال الحفر والتشغيل الميداني.
+                        تخرج المدير العام ورئيس مجلس الإدارة في أكتوبر *1978، والتحق بشركة الرخي العالمية المحدودة لحفر الآبار في المملكة العربية السعودية عام **1983*، حيث بدأ مسيرته المهنية في مجال الحفر والتشغيل الميداني.
                     </p>
                     <p>
-                        وفي عام 1986 أسس فرع شركة الرخي العالمية لحفر الآبار في السودان، مما أسهم في توسع الشركة وتعزيز حضورها في السوق السوداني.
+                        وفي عام *1986* أسس فرع شركة الرخي العالمية لحفر الآبار في السودان، مما أسهم في توسع الشركة وتعزيز حضورها في السوق السوداني.
                     </p>
                     <p>
                         ولا يزال حتى اليوم يقود الشركة بصفته المدير العام ورئيس مجلس الإدارة، وله الدور الأكبر في تطوير الشركة ورفع قدراتها الفنية والتشغيلية وترسيخ مكانتها كإحدى الشركات الرائدة في مجال حفر الآبار في المنطقة.
@@ -109,10 +169,10 @@
         <div id="content-en" class="content-section">
             <h1>About Us - Al-Rakhie International Water Well Drilling Company</h1>
             <p>
-                Al-Rakhie International Water Well Drilling Company is a leading Saudi-Sudanese company in groundwater well drilling. The company was established in Saudi Arabia in 1970 and in Sudan in 1986, with over 40 years of experience in Sudan.
+                *Al-Rakhie International Water Well Drilling Company* is a leading Saudi-Sudanese company in groundwater well drilling. The company was established in Saudi Arabia in *1970* and in Sudan in *1986, with **over 40 years of experience* in Sudan.
             </p>
             <p>
-                The company owns a modern fleet of American drilling rigs of the Gardner Denver type and relies on a highly experienced team of engineers and technicians, enabling it to drill more than one thousand wells across Sudan with outstanding efficiency and quality.
+                The company owns a modern fleet of American drilling rigs of the *Gardner Denver* type and relies on a highly experienced team of engineers and technicians, enabling it to drill more than *one thousand wells across Sudan* with outstanding efficiency and quality.
             </p>
             <p>
                 Al-Rakhie International continues to strengthen its leadership and advance its technologies to provide the best water well drilling solutions in the region.
@@ -123,13 +183,13 @@
             <h2>About the General Manager</h2>
             <div class="manager-info">
                 <img src="path/to/mahmoud_babiker_kaita_image.jpg" alt="Image of General Manager Mahmoud Babiker Kaita">
-                <div>
+                <div class="manager-text">
                     <h3>Mahmoud Babiker Kaita</h3>
                     <p>
-                        The General Manager and Chairman of the Board graduated in October 1978. They joined Al-Rakhie International Water Well Drilling Company in Saudi Arabia in 1983, where he began his professional career in drilling and field operations.
+                        The General Manager and Chairman of the Board graduated in October *1978. They joined Al-Rakhie International Water Well Drilling Company in Saudi Arabia in **1983*, where he began his professional career in drilling and field operations.
                     </p>
                     <p>
-                        In 1986, he established the Sudan branch of Al-Rakhie International Water Well Drilling Company, contributing significantly to the company's expansion and strengthening its presence in the Sudanese market.
+                        In *1986*, he established the Sudan branch of Al-Rakhie International Water Well Drilling Company, contributing significantly to the company's expansion and strengthening its presence in the Sudanese market.
                     </p>
                     <p>
                         He continues to lead the company today as the General Manager and Chairman of the Board, playing a major role in developing the company, enhancing its technical and operational capabilities, and solidifying its position as one of the leading water well drilling companies.
@@ -141,10 +201,10 @@
         <div id="content-de" class="content-section">
             <h1>Über Uns - Al-Rakhie International Wasserbohrgesellschaft</h1>
             <p>
-                Die Al-Rakhie International Water Well Drilling Company ist ein führendes saudi-sudanesisches Unternehmen im Bereich der Grundwasserbohrung. Das Unternehmen wurde 1970 in Saudi-Arabien und 1986 im Sudan gegründet und verfügt über mehr als 40 Jahre Erfahrung im Sudan.
+                Die *Al-Rakhie International Water Well Drilling Company* ist ein führendes saudi-sudanesisches Unternehmen im Bereich der Grundwasserbohrung. Das Unternehmen wurde *1970* in Saudi-Arabien und *1986* im Sudan gegründet und verfügt über *mehr als 40 Jahre Erfahrung* im Sudan.
             </p>
             <p>
-                Das Unternehmen besitzt eine moderne Flotte amerikanischer Bohrgeräte vom Typ Gardner Denver und stützt sich auf ein hoch erfahrenes Team von Ingenieuren und Technikern. Dies ermöglichte es, über tausend Brunnen im gesamten Sudan mit hervorragender Effizienz und Qualität zu bohren.
+                Das Unternehmen besitzt eine moderne Flotte amerikanischer Bohrgeräte vom Typ *Gardner Denver* und stützt sich auf ein hoch erfahrenes Team von Ingenieuren und Technikern. Dies ermöglichte es, *über tausend Brunnen* im gesamten Sudan mit hervorragender Effizienz und Qualität zu bohren.
             </p>
             <p>
                 Al-Rakhie International baut seine Führungsposition weiter aus und entwickelt seine Technologien weiter, um die besten Bohrlösungen für Wasserbrunnen in der Region anzubieten.
@@ -155,13 +215,13 @@
             <h2>Über den Geschäftsführer</h2>
             <div class="manager-info">
                 <img src="path/to/mahmoud_babiker_kaita_image.jpg" alt="Bild des Geschäftsführers Mahmoud Babiker Kaita">
-                <div>
+                <div class="manager-text">
                     <h3>Mahmoud Babiker Kaita</h3>
                     <p>
-                        Der Geschäftsführer und Vorstandsvorsitzende schloss sein Studium im Oktober 1978 ab. Er trat 1983 in Saudi-Arabien in die Al-Rakhie International Water Well Drilling Company ein, wo er seine berufliche Laufbahn im Bohr- und Feldbetrieb begann.
+                        Der Geschäftsführer und Vorstandsvorsitzende schloss sein Studium im Oktober *1978* ab. Er trat *1983* in Saudi-Arabien in die Al-Rakhie International Water Well Drilling Company ein, wo er seine berufliche Laufbahn im Bohr- und Feldbetrieb begann.
                     </p>
                     <p>
-                        Im Jahr 1986 gründete er die Sudan-Niederlassung der Al-Rakhie International Water Well Drilling Company, was maßgeblich zur Expansion des Unternehmens beitrug und seine Präsenz auf dem sudanesischen Markt stärkte.
+                        Im Jahr *1986* gründete er die Sudan-Niederlassung der Al-Rakhie International Water Well Drilling Company, was maßgeblich zur Expansion des Unternehmens beitrug und seine Präsenz auf dem sudanesischen Markt stärkte.
                     </p>
                     <p>
                         Er leitet das Unternehmen bis heute als Geschäftsführer und Vorstandsvorsitzender und spielt eine wichtige Rolle bei der Entwicklung des Unternehmens, der Verbesserung seiner technischen und operativen Fähigkeiten und der Festigung seiner Position als eines der führenden Wasserbohrunternehmen.
@@ -185,7 +245,7 @@
                 selectedContent.classList.add('active');
             }
 
-            // Set direction for Arabic
+            // Set global direction for Arabic content
             document.body.dir = (lang === 'ar') ? 'rtl' : 'ltr';
         }
 
